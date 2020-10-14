@@ -38,5 +38,4 @@ services:
       - /sessions
     container_name: phpmyadmin
 volumes:
-  mysql_volume:
-~              
+  mysql_volume:        
