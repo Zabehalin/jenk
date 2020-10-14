@@ -17,6 +17,7 @@ pipeline  {
                 dir('.'){
                     sh "git clone https://github.com/dimagamera/adas"
                     sh "cd adas/"
+                    sh "ls -l"
                     sh "docker-compose up -d --build"
                 }
             }
