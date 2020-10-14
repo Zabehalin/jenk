@@ -15,9 +15,6 @@ pipeline  {
             steps {
                 echo 'Creating docker image ...'
                 dir('.'){
-                    sh "git clone https://github.com/dimagamera/jenk"
-                    sh "cd jenk/"
-                    sh "ls -l"
                     sh "docker-compose up -d --build"
                 }
             }
